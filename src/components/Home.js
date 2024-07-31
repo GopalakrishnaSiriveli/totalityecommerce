@@ -24,6 +24,14 @@ const Home = () => {
     <div className='home-container'>
         <Navbar />
       <h1>Welcome {user ? user.name : 'Guest'}!</h1>
+    {user ? (
+        <>
+          <button onClick={handleLogout} className='buttona'>Logout</button>
+          <p>Email: {user.email}</p>
+        </>
+      ) : (
+        <button onClick={() => navigate('/login')} className='buttona'>Login</button>
+      )}
       
       <div
         style={{
@@ -38,14 +46,7 @@ const Home = () => {
         ))}
       </div>
 
-      {user ? (
-        <>
-          <button onClick={handleLogout} >Logout</button>
-          <p>Email: {user.email}</p>
-        </>
-      ) : (
-        <button onClick={() => navigate('/login')}>Login</button>
-      )}
+      
     </div>
   );
 };
