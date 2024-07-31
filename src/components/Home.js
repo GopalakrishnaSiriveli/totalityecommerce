@@ -39,6 +39,7 @@ const Home = () => {
           alignItems: "center",
           justifyContent: "center",
           flexWrap: "wrap",
+          backgroundColor:"black",
         }}
       >
         {products.map((product) => (
