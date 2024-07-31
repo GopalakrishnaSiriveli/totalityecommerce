@@ -1,0 +1,143 @@
+
+
+.home-container{
+    height:100vh;
+    text-align:center;
+
+}
+.logo {
+  height: 9vh;
+}
+.nav-link{
+    color:black;
+    font-weight:bold;
+}
+.navbar {
+  /* position: fixed; */
+  box-shadow: 2px 2px rgba(39, 37, 37, 0.36);
+  padding: 0 12vw;
+}
+
+.card-price {
+  font-weight: 900;
+  font-family: serif;
+}
+
+
+.cart-btn-and-price > button{
+
+  /* background-color: rgba(143, 255, 217, 0.752); */
+  /* height: 25px; */
+  width: 45px;
+  border-radius: 5px;
+  border: none;
+  /* padding-bottom: 15px; */
+}
+
+.card {
+  height: 25rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 4rem;
+  /* padding-bottom: 3vh; */
+  box-shadow: 3px 3px rgba(132, 132, 132, 0.36);
+}
+
+.card-img-top {
+  height: 200px;
+  width: 200px;
+}
+
+.card-text, .card-title {
+  white-space: nowrap;
+  /* Prevent text from wrapping to the next line */
+  overflow: hidden;
+  /* Hide any overflow beyond the specified width */
+  text-overflow: ellipsis;
+  /* Display an ellipsis (...) to indicate truncated text */
+  width: 15rem;
+  /* Adjust the width as needed */
+}
+
+.cart-btn-and-price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cart {
+  text-align: center;
+}
+
+.countHandler {
+  gap: 4vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartItemWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.cart-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 2.5em;
+  margin: 0;
+  margin-top: 2em;
+  padding: 1vmax 6vmax;
+  gap: 2vmax;
+}
+
+@media (max-width: 576px) {
+  .cart-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    border-radius: 0.8em;
+    margin: 0;
+    margin-top: 2em;
+    padding: 1vmax 6vmax;
+    gap: 2vmax;
+}
+}
+
+.checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+}
+
+.countHandler > button {
+  width: 45px;
+  border-radius: 5px;
+  border: none;
+}
+
+@media (max-width: 575px) {
+  
+  .checkout-component {
+    width: 75%;
+  }
+  
+}
+
+.greentick {
+  display: block;
+  margin: auto;
+  width: 25vw;
+}
