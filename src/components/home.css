@@ -8,6 +8,13 @@
 .logo {
   height: 9vh;
 }
+.buttona{
+    background-color:rgb(17, 45, 55);
+    color:white;
+    width:100px;
+    border-radius:10px;
+    margin:5px;
+}
 .nav-link{
     color:black;
     font-weight:bold;
